@@ -16,8 +16,7 @@ An ATC firmware is required on the Xiaomi sensor to use this code.
 To install it, visit here:
 [https://github.com/atc1441/ATC_MiThermometer](https://github.com/atc1441/ATC_MiThermometer "ATC Firmware")
 
-- What the current program is capable of:
--
+What the current program is capable of:
 
 - Reading MAC address values
 - Reading temperature values
@@ -26,8 +25,7 @@ To install it, visit here:
 - Reading battery voltage values in mV
 - Displaying the number of received packets
 
-- Future plans:
--
+Future plans:
 
 - Enable viewing current data through a browser via WiFi
 - Make it compatible with Alexa
@@ -50,8 +48,7 @@ Szükséges egy ATC firmware a Xiaomi szenzorra ahhoz, hogy ezt a kódot haszná
 Ennek feltelepítéséhez látogass el ide:
 [https://github.com/atc1441/ATC_MiThermometer](https://github.com/atc1441/ATC_MiThermometer "ATC Firmware")
 
-- Amire az aktuális program képes:
-- 
+Amire az aktuális program képes:
 
 - MAC cím értékének kiolvasása
 - Hőmérséklet értékek kiolvasása
@@ -60,17 +57,11 @@ Ennek feltelepítéséhez látogass el ide:
 - Elem feszültség értékek kiolvasása mV mértékegységben
 - A fogadott csomag számának megjelenítése
 
-- Jővőbeni tervek:
--
+Jővőbeni tervek:
 
 - WiFi-n keresztül böngészőben lehessen nézni az akutális adatokat
-
-
 - Alexa kompatibilissé alakítani
-
-
 - MQTT támogatást hozzáadni
-
 
 ***Kérlek amennyiben a kódomat felhasználod a saját projektedhez, oszd meg velem privátban vagy itt a teljes projekted, hogy kölcsönösen tanulhassunk belőle.***
 
