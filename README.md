@@ -1,7 +1,7 @@
 ##VERSION 2.0
 
 
-![]([https://i.imgur.com/XJgy2ed.png](https://i.imgur.com/LcmL6s9.png))
+![]([https://i.imgur.com/XJgy2ed.png])
 
 
 #ENGLISH
