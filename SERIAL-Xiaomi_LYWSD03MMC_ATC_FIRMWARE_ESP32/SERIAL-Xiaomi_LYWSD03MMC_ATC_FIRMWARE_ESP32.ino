@@ -7,15 +7,15 @@
 BLEScan *pBLEScan;
 
 void IRAM_ATTR resetModule() {
-  ets_printf("reboot\n");
+  Serial.println("reboot");
   esp_restart();
 }
 
 class MyAdvertisedDeviceCallbacks : public BLEAdvertisedDeviceCallbacks {
     void onResult(BLEAdvertisedDevice advertisedDevice) {
-        if (advertisedDevice.haveName() && advertisedDevice.haveServiceData() && !advertisedDevice.getName().compare("ATC_1C0D0B")) {
-            std::string strServiceData = advertisedDevice.getServiceData();
-            uint8_t *cServiceData = (uint8_t *)strServiceData.data();
+        if (advertisedDevice.haveName() && advertisedDevice.haveServiceData() && advertisedDevice.getName() == "ATC_1C0D0B") {
+            String strServiceData = advertisedDevice.getServiceData();
+            uint8_t *cServiceData = (uint8_t *)strServiceData.c_str();
             processServiceData(cServiceData);
         }
     }
@@ -45,7 +45,7 @@ void setup() {
 
 void loop() {
   Serial.printf("Start BLE scan for %d seconds...\n", SCAN_TIME);
-  BLEScanResults foundDevices = pBLEScan->start(SCAN_TIME);
-  Serial.printf("Found device count : %d\n", foundDevices.getCount());
+  BLEScanResults *foundDevices = pBLEScan->start(SCAN_TIME);
+  Serial.printf("Found device count : %d\n", foundDevices->getCount());
   delay(100);
 }
