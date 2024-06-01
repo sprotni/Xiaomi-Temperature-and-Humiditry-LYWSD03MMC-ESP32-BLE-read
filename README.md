@@ -1,23 +1,24 @@
-##VERSION 2.0
+## VERSION 2.0
 
+![](https://i.imgur.com/LcmL6s9.png)
 
-![](https://i.imgur.com/XJgy2ed.png)
+# Xiaomi Temperature and Humidity (LYWSD03MMC) ESP32 BLE Reader
 
+## English
 
-#ENGLISH
+The Xiaomi Temperature and Humidity (LYWSD03MMC) is a compact and efficient sensor designed for monitoring environmental conditions. It accurately measures both temperature and humidity. This device connects and transmits data to an ESP32, a powerful and versatile microcontroller, via Bluetooth Low Energy (BLE). Two versions of the code are currently present: FULL BLE LIB and MINI BLE LIB, both serving the same functions but optimized differently for resource management.
 
-# Xiaomi Temperature and Humiditry (LYWSD03MMC) ESP32 BLE reader
-The Xiaomi Temperature and Humidity (LYWSD03MMC) is a compact and efficient sensor designed for monitoring environmental conditions. It accurately measures both temperature and humidity. This device connects and transmits data to an ESP32, a powerful and versatile microcontroller, via Bluetooth Low Energy (BLE). The BLE capabilities of the ESP32 enable efficient wireless communication with the Xiaomi sensor.
+### FULL BLE LIB Version
+This version uses the standard BLE library, ideal for developers looking for extensive control and customization options in their applications. It offers robust BLE functionalities and is suitable for complex BLE operations.
 
-Tested hardware: ESP-WROOM-32
+### MINI BLE LIB Version
+Optimized for reduced memory usage and increased efficiency, the MINI BLE LIB version is perfect for simpler applications or devices with limited resources. It maintains essential BLE functionalities with a smaller footprint.
 
-An ATC firmware is required on the Xiaomi sensor to use this code.
+**Tested Hardware:** ESP-WROOM-32
 
-To install it, visit here:
-[https://github.com/atc1441/ATC_MiThermometer](https://github.com/atc1441/ATC_MiThermometer "ATC Firmware")
+**Requirements:** An ATC firmware is required on the Xiaomi sensor to use this code. To install it, visit: [ATC Firmware](https://github.com/atc1441/ATC_MiThermometer)
 
-What the current program is capable of:
-
+**Capabilities:**
 - Reading MAC address values
 - Reading temperature values
 - Reading humidity values
@@ -25,31 +26,30 @@ What the current program is capable of:
 - Reading battery voltage values in mV
 - Displaying the number of received packets
 
-Future plans:
-
+**Future Plans:**
 - Enable viewing current data through a browser via WiFi
 - Make it compatible with Alexa
 - Add MQTT support
 
-***Please, if you use my code in your own project, share with me privately or here your complete project, so we can learn from each other.***
+***Please share your complete project with me if you use my code in your own projects, so we can learn from each other.***
 
-**If you have any observations or suggestions for improvement, let me know!**
-##
+**For any observations or suggestions for improvement, let me know!**
 
-#MAGYAR
+## Magyar
 
-# Xiaomi Temperature and Humiditry (LYWSD03MMC) ESP32 BLE olvasó
-A Xiaomi Hőmérséklet és Páratartalom (LYWSD03MMC) egy kompakt és hatékony szenzor, amelyet környezeti feltételek monitorozására terveztek. Pontosan méri mind a hőmérsékletet, mind a páratartalmat. Ez az eszköz Bluetooth Low Energy (BLE) segítségével csatlakozik és adatokat továbbít egy ESP32-hez, egy erőteljes és sokoldalú mikrovezérlőhöz. Az ESP32 BLE képességei lehetővé teszik a hatékony vezeték nélküli kommunikációt a Xiaomi szenzorral.
+A Xiaomi Hőmérséklet és Páratartalom (LYWSD03MMC) egy kompakt és hatékony szenzor, amelyet környezeti feltételek monitorozására terveztek. Pontosan méri mind a hőmérsékletet, mind a páratartalmat. Ez az eszköz Bluetooth Low Energy (BLE) segítségével csatlakozik és adatokat továbbít egy ESP32-hez, egy erőteljes és sokoldalú mikrovezérlőhöz. Jelenleg két verzióban érhető el a kód: FULL BLE LIB és MINI BLE LIB, mindkettő azonos funkciókat lát el, de különböző módon optimalizálva az erőforrás-kezelésre.
 
-Tesztelt hardver: ESP-WROOM-32
+### FULL BLE LIB Verzió
+Ez a verzió a standard BLE könyvtárat használja, ami ideális a fejlesztők számára, akik széleskörű irányítást és testreszabási lehetőségeket keresnek alkalmazásaikban. Robusztus BLE funkcionalitást kínál, és összetett BLE műveletekhez alkalmas.
 
-Szükséges egy ATC firmware a Xiaomi szenzorra ahhoz, hogy ezt a kódot használhasd.
+### MINI BLE LIB Verzió
+Az optimalizált verzió, amely csökkentett memóriahasználatot és növelt hatékonyságot kínál, tökéletes egyszerűbb alkalmazásokhoz vagy korlátozott erőforrásokkal rendelkező eszközökhöz. Fenntartja a lényeges BLE funkcionalitásokat kisebb lábnyommal.
 
-Ennek feltelepítéséhez látogass el ide:
-[https://github.com/atc1441/ATC_MiThermometer](https://github.com/atc1441/ATC_MiThermometer "ATC Firmware")
+**Tesztelt Hardver:** ESP-WROOM-32
 
-Amire az aktuális program képes:
+**Követelmények:** Szükséges egy ATC firmware a Xiaomi szenzorra ahhoz, hogy ezt a kódot használhasd. Ennek feltelepítéséhez látogass el ide: [ATC Firmware](https://github.com/atc1441/ATC_MiThermometer)
 
+**Képességek:**
 - MAC cím értékének kiolvasása
 - Hőmérséklet értékek kiolvasása
 - Páratartalom értékek kiolvasása
@@ -57,12 +57,11 @@ Amire az aktuális program képes:
 - Elem feszültség értékek kiolvasása mV mértékegységben
 - A fogadott csomag számának megjelenítése
 
-Jővőbeni tervek:
-
-- WiFi-n keresztül böngészőben lehessen nézni az akutális adatokat
+**Jövőbeni Tervek:**
+- WiFi-n keresztül böngészőben lehessen nézni az aktuális adatokat
 - Alexa kompatibilissé alakítani
 - MQTT támogatást hozzáadni
 
-***Kérlek amennyiben a kódomat felhasználod a saját projektedhez, oszd meg velem privátban vagy itt a teljes projekted, hogy kölcsönösen tanulhassunk belőle.***
+***Kérlek, amennyiben a kódomat felhasználod a saját projektedhez, oszd meg velem privátban vagy itt a teljes projekted, hogy kölcsönösen tanulhassunk belőle.***
 
 **Bármilyen észrevételed vagy javítási ötleted van hozzá, jelezd!**
